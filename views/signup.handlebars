@@ -1,0 +1,40 @@
+<div class="col-md-6">
+    <h2 class="text-color">Signup</h2>
+
+    <form class="form signup-form">
+      <div class="form-group">
+        <label class="text-color" for="first-name-signup">First name:</label>
+        <input class="form-input" type="text" id="first-name-signup" />
+      </div>
+      <div class="form-group">
+        <label class="text-color" for="last-name-signup">Last name:</label>
+        <input class="form-input" type="text" id="last-name-signup" />
+      </div>
+      <div class="form-group">
+        <label class="text-color" for="username-signup">username:</label>
+        <input class="form-input" type="text" id="username-signup" />
+      </div>
+      <div class="form-group">
+        <label class="text-color" for="email-signup">email:</label>
+        <input class="form-input" type="text" id="email-signup" />
+      </div>
+      <div class="form-group">
+        <label class="text-color" for="password-signup">password:</label>
+        <input class="form-input" type="password" id="password-signup" />
+      </div>
+      <div class="form-group">
+        <label class="text-color" for="club-signup">choose club:</label>
+        <select class="form-input" type="number" id="club-signup">
+          {{#each clubs as |club|}}
+          <option value="{{club.id}}">{{club.club_name}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary text-color" type="submit">signup</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="./js/signup.js"></script>
